@@ -1,3 +1,6 @@
+import Link from "next/link";
+import DarkModeToggleButton from "./darkModeToggleButton";
+
 const Header = () => {
   return (
     <div>
@@ -8,9 +11,9 @@ const Header = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
               viewBox="0 0 24 24"
             >
@@ -19,24 +22,17 @@ const Header = () => {
             <span className="ml-3 text-xl">Todo</span>
           </a>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 hover:text-gray-900">home</a>
-            <a href="/todoList" className="mr-5 hover:text-gray-900">TodoList</a>
-            <a className="mr-5 hover:text-gray-900">project</a>
+            <Link legacyBehavior href={"/"}>
+              <a className="mr-5 hover:text-gray-900">home</a>
+            </Link>
+            <Link legacyBehavior href={"todoList"}>
+              <a className="mr-5 hover:text-gray-900">TodoList</a>
+            </Link>
+            <Link legacyBehavior href={"project"}>
+              <a className="mr-5 hover:text-gray-900">project</a>
+            </Link>
           </nav>
-          <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-            Button
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              className="w-4 h-4 ml-1"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
+          <DarkModeToggleButton />
         </div>
       </header>
     </div>

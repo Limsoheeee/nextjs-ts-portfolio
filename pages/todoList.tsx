@@ -1,10 +1,11 @@
 import React from 'react'
+import Layout from '../components/Layout';
 
 const TodoList = () => {
   return (
-    <div>
+    <Layout>
       <h1>TODO리스트</h1>
-    </div>
+    </Layout>
   )
 }
 

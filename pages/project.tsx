@@ -1,10 +1,11 @@
 import React from 'react'
+import Layout from '../components/Layout';
 
 const AboutMe = () => {
   return (
-    <div>
-      <h1>자기소개</h1>
-    </div>
+    <Layout>
+      <h1>프로젝트</h1>
+    </Layout>
   )
 }
 

@@ -1,5 +1,6 @@
 import "tailwindcss/tailwind.css";
 import type { AppProps } from "next/app";
+import { ThemeProvider } from 'next-themes'
 
 type PageProps = {
   darkMode: boolean;
@@ -11,9 +12,9 @@ type PageProps = {
 
 const MyApp = ({ Component, pageProps }: AppProps<PageProps>) => {
   return (
-    <>
+    <ThemeProvider attribute="class">
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   );
 };
 
