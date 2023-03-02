@@ -1,6 +1,12 @@
+import React from "react";
 import "tailwindcss/tailwind.css";
 import type { AppProps } from "next/app";
-import { ThemeProvider } from 'next-themes'
+import { ThemeProvider } from "next-themes";
+import {
+  Hydrate,
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
 
 type PageProps = {
   darkMode: boolean;
@@ -11,10 +17,13 @@ type PageProps = {
 };
 
 const MyApp = ({ Component, pageProps }: AppProps<PageProps>) => {
+  const [queryClient] = React.useState(() => new QueryClient());
   return (
-    <ThemeProvider attribute="class">
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </QueryClientProvider>
   );
 };
 
