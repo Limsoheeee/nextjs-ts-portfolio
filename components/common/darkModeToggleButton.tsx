@@ -1,6 +1,6 @@
 import { useTheme } from "next-themes";
 
-const darkModeToggleButton = () => {
+const DarkModeToggleButton = () => {
   const { theme, setTheme } = useTheme();
   return (
     <div>
@@ -26,4 +26,4 @@ const darkModeToggleButton = () => {
   );
 };
 
-export default darkModeToggleButton;
+export default DarkModeToggleButton;

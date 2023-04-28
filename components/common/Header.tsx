@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DarkModeToggleButton from "./darkModeToggleButton";
 
 const Header = () => {
   return (
@@ -32,6 +33,7 @@ const Header = () => {
             <Link legacyBehavior href={"project"}>
               <a className="mr-5 hover:text-gray-900">project</a>
             </Link>
+            <DarkModeToggleButton/>
           </nav>
         </div>
       </header>
