@@ -79,7 +79,7 @@ const ProjectArtizenCard = () => {
             <li>
               <div className="flex items-center gap-x-6">
                 <img
-                  className="h-50 w-50 rounded-full"
+                  className="h-20 w-20 rounded-full"
                   src={project.thumNail}
                   alt="project Icon"
                 />
