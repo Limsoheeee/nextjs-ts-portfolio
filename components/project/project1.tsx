@@ -78,7 +78,7 @@ const ProjectArtizenCard = () => {
                     {project.desc}
                     {project.download && (
                       <a href={project.download}>
-                        <p className="mt-2text-lg leading-8 text-blue-600">
+                        <p className="mt-2text-lg leading-8 text-gray-400 hover:text-blue-600">
                           APP 다운로드
                         </p>
                       </a>
