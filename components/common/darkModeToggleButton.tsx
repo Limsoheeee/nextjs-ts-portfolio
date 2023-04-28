@@ -9,7 +9,7 @@ const DarkModeToggleButton = () => {
         type="button"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
-      button
+      Dark/light
         <svg
           fill="none"
           stroke="currentColor"

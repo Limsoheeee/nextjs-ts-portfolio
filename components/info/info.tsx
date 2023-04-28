@@ -18,12 +18,12 @@ const infomation = () => {
           alt="project Icon"
           style={{
             marginBottom: "30px",
-            width: "200px",
-            height: "200px",
+            width: "100px",
+            height: "100px",
             borderRadius: "50%",
           }}
         />
-        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 ">
+        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-800 ">
           안녕하세요,
           <br className="hidden lg:inline-block" />
           invisible한 개발자 '임소희' 입니다.
@@ -41,10 +41,17 @@ const infomation = () => {
           새로운 기술이 나오면 그것을 어떻게 활용할지 고민하며 다양한 방식으로
           발전시켜 나가는 것이 필요합니다. 이를 통해 더 나은 제품을 제공할 수
           있으며, 기술적인 경쟁력을 갖출 수 있습니다. 이러한 자세로 인비저블한
-          프론트엔드 개발자로서 성장하겠습니다. 함께 일하게 된다면, 팀의 목표
-          달성을 위해 최선을 다하고, 서로에게 도움이 되는 개발자가 되겠습니다.
-          감사합니다.
+          프론트엔드 개발자로서 성장하겠습니다.
         </p>
+        <p className="mb-2 leading-relaxed"> - Javascript </p>
+        <p className="mb-2 leading-relaxed"> - React.js </p>
+        <p className="mb-2 leading-relaxed"> - React Native</p>
+        <p className="mb-2 leading-relaxed"> - Next.js </p>
+        <p className="mb-2 leading-relaxed"> - Typescript </p>
+        <p className="mb-2 leading-relaxed"> - React Qurey</p>
+        <p className="mb-2 leading-relaxed"> - Redux/Recoil</p>
+        <p className="mb-2 leading-relaxed"> - Styled Component </p>
+        <p className="mb-8 leading-relaxed"> - Html/Css </p>
         <div className="flex justify-center">
           <Link legacyBehavior href={"project"}>
             <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
