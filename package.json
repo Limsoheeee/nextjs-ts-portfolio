@@ -15,7 +15,8 @@
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
-    "react-lottie-player": "^1.5.4"
+    "react-lottie-player": "^1.5.4",
+    "styled-components": "^5.3.9"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",

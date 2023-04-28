@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Todo List</title>
-        <meta name="description" content="Todo List" />
+        <title>portfolio</title>
+        <meta name="description" content="Limsohee" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>

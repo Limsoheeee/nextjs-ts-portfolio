@@ -1,5 +1,4 @@
 import Link from "next/link";
-import DarkModeToggleButton from "./darkModeToggleButton";
 
 const Header = () => {
   return (
@@ -19,20 +18,21 @@ const Header = () => {
             >
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg>
-            <span className="ml-3 text-xl">Todo</span>
+            <Link legacyBehavior href={"/"}>
+            <a className="ml-3 text-xl hover:text-gray-900">Limsohee</a>
+            </Link>
           </a>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <Link legacyBehavior href={"/"}>
               <a className="mr-5 hover:text-gray-900">home</a>
             </Link>
             <Link legacyBehavior href={"todoList"}>
-              <a className="mr-5 hover:text-gray-900">TodoList</a>
+              <a className="mr-5 hover:text-gray-900">info</a>
             </Link>
             <Link legacyBehavior href={"project"}>
               <a className="mr-5 hover:text-gray-900">project</a>
             </Link>
           </nav>
-          <DarkModeToggleButton />
         </div>
       </header>
     </div>
