@@ -55,9 +55,9 @@ const ProjectArtizenCard = () => {
     },
   ];
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div className=" py-24 sm:py-32">
+    <section className="flex  flex-col items-center justify-center text-gray-600 body-font">
+    
+        <div className=" py-5 sm:py-5">
           {projects?.map((project) => {
             return (
               <div style={{ margin: "30px 0" }}>
@@ -77,6 +77,7 @@ const ProjectArtizenCard = () => {
                     </p>
                   </div>
                   <a href={project.page}>
+                    <div style={{marginBottom:"20px"}}>
                     <ul
                       role="list"
                       className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
@@ -100,6 +101,7 @@ const ProjectArtizenCard = () => {
                         </div>
                       </li>
                     </ul>
+                    </div>
                   </a>
                 </div>
                 <div
@@ -109,7 +111,7 @@ const ProjectArtizenCard = () => {
             );
           })}
         </div>
-      </div>
+   
     </section>
   );
 };
