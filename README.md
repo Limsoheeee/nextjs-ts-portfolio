@@ -1,2 +1,2 @@
-# nextjs-ts-todo
+# Limsohee portfolio (Next.js)
  

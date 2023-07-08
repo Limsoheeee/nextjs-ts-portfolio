@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../common/Layout";
+import styled from 'styled-components';
 
 interface Project {
   id?: number;
@@ -15,17 +15,27 @@ const ProjectArtizenCard = () => {
   const projects: Project[] = [
     {
       id: 1,
+      title: "미스고 부동산",
+      desc: "미스고 부동산, 법원경매 정보, 부동산 경매 지도를 제공하는 서비스, 웹뷰로 어플 내 데이터 맵 담당, 이벤트 페이지 담당",
+      page: "https://landing.missgorealty.com/",
+      thumNail:"https://image.rocketpunch.com/company/168847/missgoauction_logo_1649211063.png?s=400x400&t=inside",
+      period: "2023/05 ~ 진행중",
+      service: "react,nextJS,typescript",
+      download: "https://play.google.com/store/apps/details?id=com.missgoauction.missgoauction",
+    },
+    {
+      id: 2,
       title: "Crimainal IP",
       desc: "위협 인텔리전스 전문기업 에이아이스페라(AI SPERA)가 서비스하는 AI 기반 사이버 보안 검색엔을 제공하는 회사 프로젝트 내에서 about>Responsible Disclosure, Intelligence>OSINT(검색페이지) 담당 ",
       page: "https://www.criminalip.io/ko",
       thumNail:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0UakEp04h_oztEulLMMmebxwpp8_-9Xo_rA&usqp=CAU",
-      period: "2023/02 ~ 진행중",
+      period: "2023/02 ~ 2023/ 05",
       service: "react,nextJS,typescript",
       download: "",
     },
     {
-      id: 2,
+      id: 3,
       title: "Artizen",
       desc: "사용자의 GPS정보로 가장 가까운 공연장, 전시장 정보를 추천해주는 위치기반 데이터 추천 어플리케이션",
       page: "https://www.notion.so/positive-thinking/Artizen-53a635a35cea410282363c3fa3f24654",
@@ -38,7 +48,7 @@ const ProjectArtizenCard = () => {
     },
 
     {
-      id: 3,
+      id: 4,
       title: "Canya",
       desc: "카페후기를 별점, 지도로 정보를 공유하고, 원하는 카페 리뷰를 검색하여 볼 수 있는 웹 페이지 ",
       page: "https://www.notion.so/positive-thinking/Ca-Nya-9304947435c3401fae79601e18ed287a",
@@ -49,7 +59,7 @@ const ProjectArtizenCard = () => {
       download: "",
     },
     {
-      id: 4,
+      id: 5,
       title: "Coding Galaxy",
       desc: "온라인 프로그래밍 강좌 코딩애플을 클론코딩 웹페이지",
       page: "https://youtu.be/39eEMG_bjvU",
@@ -59,6 +69,7 @@ const ProjectArtizenCard = () => {
       service: "react",
       download: "",
     },
+
   ];
   return (
     <section className="flex  flex-col items-center justify-center text-gray-600 body-font">
@@ -93,8 +104,8 @@ const ProjectArtizenCard = () => {
                     >
                       <li>
                         <div className="flex items-center gap-x-6">
-                          <img
-                            className="h-20 w-20 rounded-full hover:opacity-30"
+                          <Thumbnail
+                            // className="h-20 w-20 rounded-full hover:opacity-30"
                             src={project.thumNail}
                             alt="project Icon"
                             title="관련페이지 이동"
@@ -125,3 +136,9 @@ const ProjectArtizenCard = () => {
 };
 
 export default ProjectArtizenCard;
+
+const Thumbnail = styled.img`
+width: 70px;
+height: 70px;
+border-radius:50%;
+`
